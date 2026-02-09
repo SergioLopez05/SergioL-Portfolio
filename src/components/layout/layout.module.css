@@ -1,0 +1,30 @@
+
+
+.navbar {
+  margin: auto;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  
+}
+
+.heading {
+  color: rebeccapurple;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.nav-link-text {
+  font-size: 3rem;
+  color: black;
+  font-family: "Zalando Sans Expanded";
+}
+.nav-link-text:hover {
+  color: var(--accent);
+}

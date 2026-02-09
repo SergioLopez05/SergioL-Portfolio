@@ -1,0 +1,56 @@
+.card {
+  background-color: var(--bg-card);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border: 1px solid var(--accent);
+}
+.sectionTitle {
+  font-size: 4rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  font-family: "Zalando Sans Expanded";
+  text-align: center;
+}
+.title {
+  color: var(--text-main);
+  
+  margin-bottom: 1rem;
+  font-family: "Zalando Sans Expanded";
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.tech {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: var(--bg-main);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--primary);
+}
+
+.links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+}

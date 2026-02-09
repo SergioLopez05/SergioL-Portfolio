@@ -5,5 +5,23 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Cookie`,
+          `Zalando Sans Expanded`,
+          'Syncopate'
+        ],
+        display: 'swap'
+      }
+    }
+
+  ]
 }
+

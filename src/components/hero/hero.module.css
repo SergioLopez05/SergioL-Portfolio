@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden; /* MUY IMPORTANTE */
+}
+
+/* Imagen */
+.bgImage {
+  position: absolute !important;
+  inset: 0;
+}
+
+/* Fuerza el ajuste */
+.bgImage img {
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+/* Overlay oscuro */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(55, 56, 51, 0.05),rgba(55, 56, 51, 0.35),rgba(55, 56, 51, 0.80), rgba(55, 56, 51, 1));
+  /* background: rgba(54, 55, 50, 0.85); */
+  
+}
+
+/* Contenido */
+.herotext {
+    margin-top: 20%;
+    position: relative;
+    color: var(--text-main);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 3rem;
+    color: var(--primary);
+    font-size: 4rem;
+    font-family: "Zalando Sans Expanded";
+
+    
+}
+
+.mainTitle {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
