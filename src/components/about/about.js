@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {about,  container, sectionTitle, description, highlights, card } from "./About.module.css";
+import {about,  container, sectionTitle, description, highlights, card } from "./about.module.css";
 
 export default function About() {
   return (
