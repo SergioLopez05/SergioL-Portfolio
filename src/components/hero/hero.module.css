@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 90vh;
+  
   overflow: hidden; /* MUY IMPORTANTE */
 }
 
@@ -28,21 +28,15 @@
 
 /* Contenido */
 .herotext {
-    margin-top: 20%;
+    margin-top: 100px;
     position: relative;
-    color: var(--text-main);
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
-    padding: 0 3rem;
+    padding: 0 10px;
     color: var(--primary);
-    font-size: 4rem;
+    font-size: 28px;
     font-family: "Zalando Sans Expanded";
 
     
 }
 
-.mainTitle {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}

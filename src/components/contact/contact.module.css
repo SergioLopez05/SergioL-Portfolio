@@ -1,20 +1,18 @@
-.about {
-  margin-top: 10%;
 
-  background-color: var(--bg-card);
-  padding: 20px;
-}
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .sectionTitle {
-  font-size: 24px;
+  font-size: 4rem;
   color: var(--text-main);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  font-family: "Zalando Sans Expanded";
+  text-align: center;
 }
 
 .description {
@@ -26,9 +24,9 @@
 /* Cards */
 
 .highlights {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  
 }
 
 .card {
@@ -62,4 +60,37 @@
   .highlights {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* FORM */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 50%;
+  margin: 50px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.form button {
+  background-color: #E26D5C;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  opacity: 0.9;
 }

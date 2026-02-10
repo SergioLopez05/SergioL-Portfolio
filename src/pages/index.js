@@ -4,6 +4,7 @@ import Hero from "../components/hero/hero";
 import * as Styles from "../styles/global.css"
 import About from "../components/about/about"
 import Projects from "../components/projects/projects"
+import Contact from '../components/contact/contact';
 const IndexPage = () => {
   return (
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
 
       <About />
       <Projects />
+      <Contact />
     </  div>
     
   )
