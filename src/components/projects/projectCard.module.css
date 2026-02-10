@@ -13,9 +13,13 @@
   border: 1px solid var(--accent);
 }
 .sectionTitle {
-  font-size: 4rem;
+  background-color: var(--bg-card);
+  font-size: 24px;
   color: var(--text-main);
-  margin-bottom: 2rem;
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  
   font-family: "Zalando Sans Expanded";
   text-align: center;
 }

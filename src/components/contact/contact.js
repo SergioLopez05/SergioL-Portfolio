@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import {
-    about,
+    contact,
     container,
     sectionTitle,
     description,
@@ -12,7 +12,7 @@ import {
 
 export default function Contact() {
     return (
-        <section className={about} id="contact">
+        <section className={contact} id="contact">
             <h2 className={sectionTitle}>Contact Me</h2>
             <div className={container}>
 

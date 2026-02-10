@@ -1,14 +1,21 @@
 .hero {
   position: relative;
-  
-  overflow: hidden; /* MUY IMPORTANTE */
+  height: 95vh;
+  background-image: url("../../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
 }
 
-/* Imagen */
-.bgImage {
-  position: absolute !important;
-  inset: 0;
+.heroShrink {
+  height: 60vh;
 }
+
+
+
 
 /* Fuerza el ajuste */
 .bgImage img {
@@ -28,15 +35,19 @@
 
 /* Contenido */
 .herotext {
-    margin-top: 100px;
-    position: relative;
-    text-align: center;
-    top: 50%;
-    padding: 0 10px;
+    position: fixed;
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
     color: var(--primary);
     font-size: 28px;
     font-family: "Zalando Sans Expanded";
 
     
+}
+
+.heroShrink .herotext {
+  position: relative;
+  transform: scale(0.9);
+  opacity: 0.85;
 }
 

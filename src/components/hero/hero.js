@@ -1,53 +1,37 @@
 import * as React from 'react';
+import ReactA, { useEffect, useState } from "react"
 import { StaticImage } from "gatsby-plugin-image";
-import {hero,
-bgImage,
-overlay,
-containerHero,
-herotext
-}  from "./hero.module.css";
+import {
+    hero,
+    bgImage,
+    overlay,
+    containerHero,
+    herotext,
+    heroShrink
+} from "./hero.module.css";
 
+const Hero = ({children}) => {
+    
 
+  const [shrink, setShrink] = useState(false)
 
-// ../images/pexels-noval-gani-2149253671-36054393.jpg
+  useEffect(() => {
+    const handleScroll = () => {
+      setShrink(window.scrollY > 80)
+    }
 
-// export default function Hero() {
-//   return (
-//     <section className={styles.hero}>
-      
-//       <StaticImage
-//         src="../../images/pexels-noval-gani-2149253671-36054393.jpg"
-//         alt="Hero background"
-//         className={styles.bgImage}
-//         layout="fullWidth"
-//         placeholder="blurred"
-//       />
+    window.addEventListener("scroll", handleScroll)
 
-//       <div className={styles.overlay}></div>
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
-//       <div className={styles.containerHero}>
-//         {/* Tu contenido */ "aquí va el texto o los elementos que quieras mostrar sobre la imagen"}
-//       </div>
-//     </section>
-//   );
-// }
-
-const Hero = ({ children }) => {
   return (
-    <section className={hero}>
-      
-      <StaticImage
-        src="../../images/hero-bg.jpg"
-        alt="Hero background"
-        className={bgImage}
-        layout="fullWidth"
-        placeholder="blurred"
-      />
-
+    <section
+      className={`${hero} ${shrink ? heroShrink : ""}`}
+    >
       <div className={overlay}></div>
 
       <div className={herotext}>
-        
         {children}
       </div>
     </section>
