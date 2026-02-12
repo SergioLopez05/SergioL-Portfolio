@@ -17,7 +17,7 @@ export default function About() {
         <div className={highlights}>
 
           <div className={card}>
-            <h3>Coding Languages</h3>
+            <h3>Backend</h3>
 
             <div className={imageGrid}>
               <StaticImage
@@ -27,8 +27,8 @@ export default function About() {
               />
 
               <StaticImage
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png"
-                alt="java"
+                src="https://freesvg.org/img/1643312603cpp.png"
+                alt="c++"
                 placeholder="blurred"
               />
 
@@ -47,60 +47,60 @@ export default function About() {
           </div>
 
           <div className={card}>
-            <h3>Database Design</h3>
+            <h3>Frameworks</h3>
             <div className={imageGrid}>
               <StaticImage
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/csharp.png"
-                alt="csharp"
+                src="../../images/net_core-removebg-preview.png"
+                alt=".net"
                 placeholder="blurred"
               />
 
               <StaticImage
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png"
-                alt="java"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1280px-React.svg.png"
+                alt="react"
                 placeholder="blurred"
               />
 
               <StaticImage
-                src="https://upload.wikimedia.org/wikipedia/commons/3/31/Python-logo.png"
-                alt="python"
+                src="https://www.pontia.tech/wp-content/uploads/2025/06/que-es-angular.png"
+                alt="angular"
                 placeholder="blurred"
               />
 
               <StaticImage
-                src="https://media.lex.dk/media/60707/standard_js.png"
-                alt="javascript"
+                src="https://www.mindrops.com/images/nodejs-image.webp"
+                alt="nodejs"
                 placeholder="blurred"
               />
             </div>
           </div>
 
           <div className={card}>
-            <h3>Buenas Prácticas</h3>
+            <h3>Other knowledge</h3>
             <div className={imageGrid}>
               <StaticImage
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/csharp.png"
-                alt="csharp"
+                src="https://www.ezcomsoftware.com/wp-content/uploads/2018/03/API-EDI.png"
+                alt="api"
                 placeholder="blurred"
               />
 
               <StaticImage
-                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/java.png"
-                alt="java"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                alt="sql"
                 placeholder="blurred"
               />
 
               <StaticImage
-                src="https://upload.wikimedia.org/wikipedia/commons/3/31/Python-logo.png"
-                alt="python"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/03/Git_format.png"
+                alt="git"
                 placeholder="blurred"
               />
-
+{/* 
               <StaticImage
                 src="https://media.lex.dk/media/60707/standard_js.png"
                 alt="javascript"
                 placeholder="blurred"
-              />
+              /> */}
             </div>
           </div>
 

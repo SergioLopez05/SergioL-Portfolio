@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { StaticImage } from "gatsby-plugin-image";
 import {
     contact,
     container,
@@ -7,21 +7,24 @@ import {
     description,
     highlights,
     card,
-    form
+    form,
+    a
 } from "./contact.module.css";
 
 export default function Contact() {
     return (
         <section className={contact} id="contact">
             <h2 className={sectionTitle}>Contact Me</h2>
+            <p className={description}>
+                Feel free to reach out to me through the form below or write me an email at sergiolopezvenegas05@gmail.com
+            </p>
             <div className={container}>
 
                 {/* FORMULARIO */}
                 <form
                     className={form}
                     name="contact"
-                    method="POST"
-                    data-netlify="true"
+                    netlify
                 >
                     <input type="hidden" name="form-name" value="contact" />
 
@@ -41,15 +44,15 @@ export default function Contact() {
 
                 <div className={highlights}>
                     <div className={card}>
-                        <h3 >Descarga mi CV</h3>
-                        <p>Descarga mi CV en formato PDF</p>
+                        <a className={a} href="/SergioLopezVenegasResume.pdf" target="_blank" rel="noreferrer">
+                            View CV
+                        </a>
                     </div>
                 </div>
 
-                <div className={highlights}>
+                <div className={highlights} >
                     <div className={card}>
-                        <h3 >Github</h3>
-                        <p>Mira mi repositorio en Github</p>
+                        <a className={a} href="https://github.com/SergioLopez05" target="_blank" rel="noreferrer">Look at my Github profile</a>
                     </div>
                 </div>
             </div>

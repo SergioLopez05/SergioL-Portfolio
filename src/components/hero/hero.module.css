@@ -1,17 +1,17 @@
 .hero {
-  position: relative;
-  height: 95vh;
-  background-image: url("../../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
+    position: relative;
+    height: 95vh;
+    background-image: url("../../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
 }
 
 .heroShrink {
-  height: 60vh;
+    height: 60vh;
 }
 
 
@@ -19,35 +19,36 @@
 
 /* Fuerza el ajuste */
 .bgImage img {
-  object-fit: cover;
-  object-position: center;
-  
+    object-fit: cover;
+    object-position: center;
+
 }
 
 /* Overlay oscuro */
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(55, 56, 51, 0.05),rgba(55, 56, 51, 0.35),rgba(55, 56, 51, 0.80), rgba(55, 56, 51, 1));
-  /* background: rgba(54, 55, 50, 0.85); */
-  
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(55, 56, 51, 0.05), rgba(55, 56, 51, 0.35), rgba(55, 56, 51, 0.80), rgba(55, 56, 51, 1));
+    z-index: 1;
+    /* background: rgba(54, 55, 50, 0.85); */
+
 }
 
 /* Contenido */
 .herotext {
-    position: fixed;
-  text-align: center;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     color: var(--primary);
     font-size: 28px;
     font-family: "Zalando Sans Expanded";
 
-    
+
 }
 
 .heroShrink .herotext {
-  position: relative;
-  transform: scale(0.9);
-  opacity: 0.85;
+    position: relative;
+    transform: scale(0.9);
+    opacity: 0.85;
 }
-
